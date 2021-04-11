@@ -11,22 +11,27 @@
 </head>
 
 
+
 <body>
 
-    <h1>Pourya's Journal :)</h1>
-    <main>Welcome to My Journal. I hope you enjoy reading it.</main>
+    <h1>Pourya's Journal</h1>
+    <main>Welcome to My Journal. I hope you enjoy reading it. <span class="important note">Also, you can check out my favorite YouTube channel :)</span></main>
 
+    <nav>
+        <a href="https://www.youtube.com/user/scottykilmer">My Favorite YouTube Channel</a> 
+    </nav>
+    
 
     <section>
         <header>
         <h1>Tuesday (4/6/21) Journal</h1>
-        <h3>Things that needed to be done based on priority:</h3>
+        <h3>Things that needed to be done based on  priority:</h3>
         </header>
         <ol>
                 <li>Doing HW for CSE 101</li>
-                <li>Attending office hours for CSE 101</li>
+                <li>Attending office hours for <b class="importance">CSE 101</b></li>
                 <li>Watching recorded lecture for CSE 110 and ECE 45</li>
-                <li>Relaxing for some time</li>
+                <li><strong>Relaxing for some time</strong></li>
         </ol>
 
         
@@ -37,13 +42,14 @@
             <li>Practice the new formula introduced for Bode Plots</li>
             <li>Try to remeber the procedure for solving linear circuits</li>
         </ul>
-
+        <div class="Important Note">
         <p>Getting off my chest:<br>
             My CSE 101 is challenging and the more I try to understand what is going on in that class, the more I get confused.<br>
             I think the only way to pass this class is to go to the prof's office hours so that I can clarify any misunderstanding
             that I might have about graphs, the topic that we are covering this week.
         </p>
 
+    </div>
         <p>A picture of my favorite car that I came across on this date:</p>
         <img src="image/favoritecar.JPG" alt="Favorite Car" width="500" height=250">
 
@@ -93,7 +99,7 @@
         
 
         <h3>Important Note:</h3>
-        <p>I didn't come acorss any interesting pic, audio, or video on this date.</p>
+        <p><i>I didn't come acorss any interesting pic, audio, or video on this date.</i></p>
 
 
    
@@ -131,20 +137,90 @@
         
 
         <h3>Important Note:</h3>
-        <p>I didn't come acorss any interesting pic, audio, or video on this date.</p>
-
-
-   
-
+        <p><i>I didn't come acorss any interesting pic, audio, or video on this date.</i></p>
 
 
     </section>
+<hr>
+
+    <details>
+        <summary>
+            After reading my journal, what do you think I'm mostly interested in? Click on this to find out.
+        </summary>
+        Cars :)
+    </details>
+
+    <hr>
 
 
+    <form>
+
+            <fieldset>
+
+                    <label>Name</label>
+                    <input type="text">
+                    <br>
+
+                    <label>What Day you want to pick for journaling?</label> <br>
+                    <input type="radio" name="day"> Monday <br>
+                    
+                    <input type="radio" name="day"> Tuesday <br>
+                    
+                    <input type="radio" name="day"> Wednesday <br>
+                    
+
+                    <label>Check all that apply.</label> <br>
+                    <input type="checkbox" > I'm a student <br>
+                    <input type="checkbox" > I'm computer science major <br>
+
+
+                    <label>The date you want to start your journal</label> <br>
+                    <input type="date"><br>
+
+                    <label>Write your journal here:</label><br>
+                    <textarea rows="20" cols="50"> </textarea>
+
+
+                <br>
+               
+                <label for="server"> Choose where you want to save your journal:</label><br>
+                <input list="servers" name="server" id="server">
+                <datalist name="list" id="servers">
+                    <option value="Amazon"> Amazon </option> 
+                    <option value="Microsoft"> Microsoft </option>
+                    
+                </datalist>
+                <br>
+
+                <label for="prefer"> What method of communication do you prefer?</label>
+                <select name="pre" id="prefer">
+                    <option value="email"> email </option>
+                    <option value="slack"> slack</option>
+                </select>
+
+
+                <br>
+                <button> Submit</button>
+
+            </fieldset>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </form>
 
     <footer>
         <p>Author: Pourya<br>
-        Please contact me if you have any questions.
+        Please <em>contact</em> me if you have any questions.
         </p>
 
     </footer>
