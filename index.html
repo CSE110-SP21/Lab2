@@ -27,12 +27,12 @@
     
     <section id="AGENDA">
       <em>Agenda</em>
-      <strong>
         <blockquote> 
-          "To introduce ourselves to one another and get a feel for each other's current workload. Additionally, the scheduling of 
-          a follow-up meeting."
+          <strong>
+            "To introduce ourselves to one another and get a feel for each other's current workload. Additionally, the scheduling of 
+            a follow-up meeting."  
+          </strong>
         </blockquote>
-      </strong>
     </section>
     <hr>
     
@@ -112,56 +112,57 @@
 
   <section id="EMBEDED_AUDIO">
     <em> Audio</em><br>
-    <audio controls src="recordings/even_more_spanish_rock.mp3" type="video/mp3"></audio>
+    <audio controls src="recordings/even_more_spanish_rock.mp3"></audio>
     <ul>
       <li> <strong> Song:</strong> Te Quiero </li>      
       <li> <strong> Artist:</strong> Hombres G </li>
     </ul>
   </section>
-  </main>
+
   <hr>
-  <footer>
-    <label for="My-First-Form"> <em> My First Form </em></label>
-    <form id="My-First-Form">
+
+  <section id="myform">
+    <h4> My First Form</h4>
+    <form>
         <fieldset name="topping">
             <legend>Pizza Toppings</legend>
-            <input type="checkbox" id="pepperoni">
-            <label for="pepperoni" name="topping"> Pepperoni</label> <br>
-
-            <input type="checkbox" id="pineapple" checked>  
+            <input type="checkbox" id="pepperoni" name="topping">
+            <label for="pepperoni"> Pepperoni</label> <br>
+  
+            <input type="checkbox" id="pineapple" name="topping" checked>  
             <label for="pineapple" name="topping"> Pineapple</label> <br>
-
-            <input type="checkbox" id="ham" checked>    
-            <label for="ham" name="topping"> Ham</label><br>
-
-            <input type="checkbox" id="tomatoes">  
-            <label for="CHECKBOX-4" name="topping"> Tomatoes</label>
+  
+            <input type="checkbox" id="ham" name="topping" checked>    
+            <label for="ham"> Ham</label><br>
+  
+            <input type="checkbox" id="tomatoes" name="topping">  
+            <label for="tomatoes"> Tomatoes</label>
         </fieldset>
-
+  
         <fieldset name="professor">
           <legend> IYKYK</legend>
           <input type="radio" id="RADIO-1" name="professor" disabled>
           <label for="RADIO-1"> Gary Gillespie </label><br>
-
+  
           <input type="radio" id="RADIO-2" name="professor">
           <label for="RADIO-2"> Powell Thomas </label><br>
-
+  
           <input type="radio" id="RADIO-3" name="professor">
           <label for="RADIO-3"> Niema Moshiri </label><br>
-
+  
           <input type="radio" id="RADIO-3" name="professor"> 
-          <label for="RADIO-3"> Russell Impagliazzo </label><br>
+          <label for="RADIO-4"> Russell Impagliazzo </label><br>
         </fieldset>
-
+  
         <fieldset>
           <legend> Kitchen Sink</legend>
-
+  
           <label for="TEXT"> Text </label><br>
           <input type="text" id="TEXT" placeholder="Have a good day :)"><br>
-
+  
           <label for="DATE"> Date</label><br>
           <input type="date" id="DATE" value="2021-10-03"><br>
-
+  
           <label for="TEXTAREA">TextArea</label><br>
           <textarea placeholder="Drink some water!" id="TEXTAREA"></textarea> <br>
           <label> 
@@ -186,12 +187,18 @@
             <option value="OTHER"></option>
           </datalist>
         </fieldset>
-
+  
         <fieldset>
           <legend> A Portal to the Nether</legend>
-          <button> <a href="#AGENDA">What was the Agenda?</a></button>
+          <button> <link href="#AGENDA">What was the Agenda?</link></button>
         </fieldset>
     </form>
+  </section>
+
+  </main>
+
+  <footer>
+  <p> Cya!</p>
   </footer>
 </body>
 </html>
