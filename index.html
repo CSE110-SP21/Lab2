@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My First Webpage</title>
+</head>
+<body>
+  <header>
+    <h1>Meeting #1 Notes</h1>
+    <h2> 
+      <span>Formalities</span> and <span>Scheduling</span>
+    </h2>
+    <h3>October 3rd, 2021</h3>
+  </header>
+  <main>
+    
+    <details>
+      <summary> <em>Attendees</em> </summary>
+      <ul>
+        <li> Jonathan Bocanegra</li>
+        <li> Elmo </li>
+        <li> Young Thug</li>
+        <li> Ricky the Racoon </li>
+      </ul>  
+    </details>
+    <hr>
+    
+    <section id="AGENDA">
+      <em>Agenda</em>
+      <strong>
+        <blockquote> 
+          "To introduce ourselves to one another and get a feel for each other's current workload. Additionally, the scheduling of 
+          a follow-up meeting."
+        </blockquote>
+      </strong>
+    </section>
+    <hr>
+    
+    <section id="ABOUT">
+      <details>
+        <summary> <em>About</em> </summary>
+        <div>
+          <ul>
+            <li> 
+              Jonathan Bocanegra
+              <ol>
+                <li> 4th Year @ <b>UCSD</b></li>
+                <li> On separate occassions he has broken his thumb, elbow, and leg</li>
+                <li> Has 3 brothers, 1 sister, and 1 dog</li>
+              </ol>
+            </li>
+            <li> Elmo </li>
+              <ol>
+                <li> Lives on Sesame Street</li>
+                <li> Likes to check his mail </li>
+                <li> Once testified before <a href="https://www.loc.gov/item/2019646086/">congress</a></li>
+              </ol>
+            <li> Young Thug</li>
+              <ol>
+                <li> Culture Icon </li>
+                <li> Founder of YSL records</li>
+                <li> Has interests in Machine Learning with applications in Computer Vision</li>
+              </ol>
+            <li> Ricky the Racoon </li>
+              <ol>
+                <li> Likes trash</li>
+                <li> Currently looking for housing</li>
+                <li> Nocturnal</li>
+              </ol>
+          </ul> 
+        </div>
+      </details>
+    </section>
+    <hr>
+    <section id="GOALS">
+      <em>Goals</em>
+      <blockquote>
+        "We want to drop the <b><i>best mixtape ever</i></b>."
+      </blockquote>
+      <em>Challenges</em>
+      <ol>
+        <li> <strong> How do we quantify "best"?</strong> </li>
+        <li> <strong> When do we want to have it out by?</strong></li>
+      </ol>
+      <em>Individual Concerns</em>
+      <p>
+        "I'm not a rapper" - Jonathan <br>
+        "I have a bedtime" - Elmo <br>
+        "I can't be seen with y'all" - Thuga Thuga <br>
+        "I just came for the snacks" - Ricky <br>
+      </p>
+    </section>
+    <section id="FOLLOW_UP">
+      <em> Actionables</em>
+      <ul>
+        <li> Each person must come up with a potential group name</li>
+        <li> Meet next week Oct 10th @9pm</li>
+      </ul>
+    </section>
+
+  <hr>
+  <section id="EMBEDED_VIDEO">
+    <em> Video </em><br>
+    <video controls>
+      <source src="recordings/spanish_rock.mp4" type="video/mp4">
+    </video> 
+    <ul>
+      <li> <strong> Song:</strong> Lamento Boliviano </li>      
+      <li> <strong> Artist:</strong> Enanitos Verdes </li>
+    </ul>
+  </section>
+
+  <section id="EMBEDED_AUDIO">
+    <em> Audio</em><br>
+    <audio controls src="recordings/even_more_spanish_rock.mp3" type="video/mp3"></audio>
+    <ul>
+      <li> <strong> Song:</strong> Te Quiero </li>      
+      <li> <strong> Artist:</strong> Hombres G </li>
+    </ul>
+  </section>
+  </main>
+  <hr>
+  <footer>
+    <label for="My-First-Form"> <em> My First Form </em></label>
+    <form id="My-First-Form">
+        <fieldset name="topping">
+            <legend>Pizza Toppings</legend>
+            <input type="checkbox" id="pepperoni">
+            <label for="pepperoni" name="topping"> Pepperoni</label> <br>
+
+            <input type="checkbox" id="pineapple" checked>  
+            <label for="pineapple" name="topping"> Pineapple</label> <br>
+
+            <input type="checkbox" id="ham" checked>    
+            <label for="ham" name="topping"> Ham</label><br>
+
+            <input type="checkbox" id="tomatoes">  
+            <label for="CHECKBOX-4" name="topping"> Tomatoes</label>
+        </fieldset>
+
+        <fieldset name="professor">
+          <legend> IYKYK</legend>
+          <input type="radio" id="RADIO-1" name="professor" disabled>
+          <label for="RADIO-1"> Gary Gillespie </label><br>
+
+          <input type="radio" id="RADIO-2" name="professor">
+          <label for="RADIO-2"> Powell Thomas </label><br>
+
+          <input type="radio" id="RADIO-3" name="professor">
+          <label for="RADIO-3"> Niema Moshiri </label><br>
+
+          <input type="radio" id="RADIO-3" name="professor"> 
+          <label for="RADIO-3"> Russell Impagliazzo </label><br>
+        </fieldset>
+
+        <fieldset>
+          <legend> Kitchen Sink</legend>
+
+          <label for="TEXT"> Text </label><br>
+          <input type="text" id="TEXT" placeholder="Have a good day :)"><br>
+
+          <label for="DATE"> Date</label><br>
+          <input type="date" id="DATE" value="2021-10-03"><br>
+
+          <label for="TEXTAREA">TextArea</label><br>
+          <textarea placeholder="Drink some water!" id="TEXTAREA"></textarea> <br>
+          <label> 
+            Select an Option <br>
+            <select id="SELECT">
+              <option value="Option 1">Option 1</option>
+              <option value="Option 2">Option 2</option>
+              <option value="Option 3">Option 3</option>
+            </select>  
+          </label>
+        </fieldset>
+        
+        <fieldset>
+          <legend> Dog Breeds</legend>
+          <input list="list-of-breeds" id="dog-breed-choice" placeholder="Choose your favorite!">
+          <datalist id="list-of-breeds">
+            <option value="LABRADOR"></option>
+            <option value="WEIMARANER"></option>
+            <option value="WEINER DOG"></option>
+            <option value="GOLDEN RETRIEVER"></option>
+            <option value="GOLDEN DOODLE"></option>
+            <option value="OTHER"></option>
+          </datalist>
+        </fieldset>
+
+        <fieldset>
+          <legend> A Portal to the Nether</legend>
+          <button> <a href="#AGENDA">What was the Agenda?</a></button>
+        </fieldset>
+    </form>
+  </footer>
+</body>
+</html>
