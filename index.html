@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset= "UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aryan's Meeting Minutes</title>
+    <link href="MeetingNotes.png">
+</head>
+    <body>
+        <header>
+            <div>Content</div>
+            <nav>
+              <ul>
+                <li><a href="#MainP">Main Page</a></li>
+                <li><a href="#subscribe">Subscribe to Mailing List</a></li>
+              </ul>
+            </nav>
+          </header>
+        <main>
+            <h1 id="MainP">Aryan's Meeting Notes</h1>
+            <h2>Thing's that people have missed</h2>
+            <h3>Date: 03/10/2021</h3>
+        </main>
+        <section>
+            Attendence List:
+            <ol>
+                <li>Alex</li>
+                <li>Kelly</li>
+                <li>Aryan</li>
+                <li>Peter</li>
+                <li>Lucas</li>
+            </ol>
+        </section>
+        <hr />
+        <p><em>The agenda of the meeting will cover -</em> This meeting will cover the previous week's content and also go over what we are going to produce next quarter</p>
+        <p>New business will be what the boss wants to cover from <b>HR</b></p>
+        <p>There were no <strong>comments / questions / concerns</strong> that anyone brought up</p>
+        <p><i>Please subscribe to the email list at the bottom if you miss a meeting</i></p>
+        <br />
+        <img src="SWE_Diagram.pbm" alt="Image">
+        <hr />
+        <audio controls>
+            <source src="VoiceNote.mp3" type="audio/mpeg">
+        </audio>
+        <hr />
+        <video width="320" height="240" controls>
+            <source src="VideoRecording.mp4" type="video/mp4">
+        </video>
+        <hr />
+        <form action="FormProcessor" method="get">
+            <fieldset>
+                <legend>About you?</legend>
+                <p>Name: <input type="text" name="Name" /> </p>
+                <p>Date of Birth: <input type="date" name="DOB" /> </p>
+                <p>Are you free for next meeting: <input type="checkbox" name="Free" /> </p>
+                <p>Select what time you prefer:</p>
+                <input type="radio" name="time1" value="7pm" />7pm <br />
+                <input type="radio" name="time2" value="8pm" />8pm <br />
+                <input type="radio" name="time3" value="9pm" />9pm <br />
+                <p>Leave a message: <br /> </p>
+                <textarea name="mytxtarea" rows=""></textarea>
+            </fieldset>
+        </form>
+        <label for="browser">What is your favorite browser:</label>
+        <input list="browsers" name="browser" id="browser">
+        <datalist id="browsers">
+            <option value="Safari">
+            <option value="Firefox">
+            <option value="Chrome">
+          </datalist>
+          <br />
+          <br />
+          <br />
+        <label for="Computer Brands">Choose a computer brand:</label>
+        <select name="Computer" id="Comp">
+            <option value="Apple">Apple</option>
+            <option value="Microsoft">Microsoft</option>
+            <option value="HP">HP</option>
+        </select>
+        <details>
+            <summary>Some details about me:
+            </summary>
+            I like CSE 110 and I like to code back-end. 
+        </details>
+        <footer>
+            <h5 id="subscribe">Subscribe</h5>
+              <input type="text" placeholder="Enter Email Address" />
+              <button>Submit</button>
+            </form>
+          </footer>
+    </body>
+</html>
